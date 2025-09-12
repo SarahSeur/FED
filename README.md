@@ -43,6 +43,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/home-pagina1.png" width="375px" alt="Home pagina waarin er een video wordt getoont over sport">
   <img src="readme-images/home-pagina2.png" width="375px" alt="Kopje over een soort schoen en je wordt aangemoedigd om op de shop knop te klikken">
 
+  Bronnen: 
+  (Nike (Netherlands), z.d.)
+
+
   #### Screenshot(s) van de tweede pagina (small screen):
   Product pagina  
   <img src="readme-images/product-pagina1.png" width="375px" alt="Het product is zichtbaar met informatie zoals de prijs en naam">
@@ -70,21 +74,34 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   * Media zoals achtergrond video's worden automatisch afgespeeld.
   * Video's kunnen niet op pauze.
   * Er zijn geen captions bij video's.
-  * Veel links zien eruit als buttons op de site.
-  * De text-size kan niet aangepast worden.
+  * Veel links zien eruit als buttons op de site en andersom.
+  * De font-size kan niet aangepast worden.
   * Er zitten veel foutmeldingen in de html.
   * Er wordt niet altijd 'simpele' taal gebruikt. Meer een verkoop praatje.
-  * Op mobiel volgt het bijna de WCAG richtlijnen, maar bij rotatie lukt dat alleen niet wanneer je de telefoon op de kop houdt.
+  * Op mobiel volgt de site bijna de WCAG richtlijnen, maar bij rotatie lukt dat alleen niet wanneer je de telefoon op de kop houdt.
   * De homepage houdt zich niet helemaal aan de H1, H2 etc. De titel van de pagina begint bij een H3 en andere kopjes worden ook zo gebruikt.
 
   #### Conclusie
   Over het algemeen lukt het Nike redelijk om zich aan de WCAG richtlijnen te houden, toch werkt er veel niet of is het gewoon simpelweg
-  niet gecodeerd. De site van Nike gaat wel erg de goede kant op met 'mobile and touch' en 'color contrast'. Ik vind dat Nike een paar hele 
+  niet gecodeerd. De site van Nike gaat wel de goede kant op met 'mobile and touch' en 'color contrast'. Ik vind dat Nike een paar hele 
   belangrijke toegankelijkheids punten misloopt, zoals het niet kunnen aanpassen van de tekst grootte is voor veel mensen enorm belangrijk, 
   ook kunnen mensen verward raken doordat de links eruit zien als buttons etc. De mensen met een beperking kunnen dus niet altijd even 
   makkelijk de website gebruiken, denk aan slechtzienden en mensen die bijvoorbeeld niet goed tegen allerlei bewegingen kunnen.
   
+
+  ### Screenreader
+  In de les zijn we ook bezig geweest met een screenreader. Het was voor mij de eerste keer en het was een bijzondere ervaring. 
+  Het werkt slecht. Het was nog al een overweldigende ervaring, maar het was wel heel erg interessant om er mee te werken. 
+  Kijken naar wat wel goed werkt en wat niet. Ik heb de Nike site bekeken en de Uniqlo site (die een klasgenoot gaat namaken),
+  wat wel snel duidelijk was geworden was dat de Nike site niet goed werkte met een screenreader. Er werden bijvoorbeeld URLs 
+  opgenoemd van linkjes, dat duurt dus ontiegelijk lang, en je wordt er ook gewoon knettergek van. Ook was de alt op images 
+  niet altijd duidelijk en kon je dus niet echt weten wat voor schoenen er nou te zien waren. Je kreeg bijvoorbeeld wel de
+  naam te horen van de schoenen, maar als blinde of slechtziende heb je geen idee hoe ze er dan uit zien.
   
+  #### Conclusie
+  Ik heb door deze oefening geleerd hoe belangrijk het is dat websites goed werken met screenreaders. Soms veloor ik mijn 
+  geduld, maar het was wel interessant om te zien waat het dan mis gaat en wat juist weer beter kan.
+
 </details>
 
 
@@ -97,7 +114,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### de hele pagina: 
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/breakdown-home.jpg" width="375px" alt="breakdown van de homepagina">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
@@ -255,7 +272,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
+  1. nike (Netherlands). (z.d.). Nike.com. https://www.nike.com/nl/en/
   2. bron 2
   3. ...
 
