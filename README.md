@@ -113,11 +113,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### de hele pagina: 
 
-  ### dynamisch deel (bijv menu): 
+  ### Homepagina: 
   <img src="readme-images/breakdown-home.jpg" width="375px" alt="breakdown van de homepagina">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  ### Productpagina: 
+  <img src="readme-images/breakdown-product.jpg" width="375px" alt="breakdown van de product pagina">
+
+  De breakdown schetsen maken was goed te doen voor mij. Het is even kijken van "welke html elementen heb je ook alweer?". 
+  Na even puzzelen en bedenken wat wat is heb ik twee duidelijke breakdown schetsen voor mezelf in elkaar gezet. Nu kan ik goed 
+  beginnen met de html en weet ik al precies wat ik nodig moet hebben.
 
 </details>
 
@@ -133,24 +137,30 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  De huiswerk opdrachten en de opdrachten die we in de les deden gingen heel erg goed. Ik merkte wanneer ik de huiswerk opdrachten 
+  maakten dat ik het dan makkelijk en snel begreep wat er in de les verteld werd. Soms waren opdrachten wat lastig en dan kwam ik 
+  er even niet uit. Ik heb dan lang gepuzzeld of dingen opgezocht om te begrijpen waarom er iets niet werkt bijvoorbeeld.
+
+  Coderen.. etc
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1    | student 2          | student 3    | student 4        |
-  |--------------| ---                | ---          | ---              |
-  | dit bespreken | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...          | ...                | ...          | ...              |
+  | student 1 (ik)                        | student 2                      | student 3                       | student 4 |
+  |---------------------------------------|--------------------------------|---------------------------------|-----------|
+  | Hoe kan ik het best beginnen?         | Hoe maak ik een hamburgermenu? | Hoe maak ik een hamburger menu? | Afwezig   |
+  | Hoe kan ik mijn breakdown verbeteren? | -                              | -                               | Afwezig   |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Het beste is om te beginnen met de volledige html en daarna de rest. Door de breakdown schetsen gemaakt te hebben kan 
+    ik alles soort van al overtypen in de html.
+  - Er waren nog een paar kleine verbeterpunten in mijn breakdowns. Zo miste ik bijvoorbeeld nog een 'ul' ergens, voor 
+    de rest vonden zij dat ik het al erg goed had uitgewerkt.
+  - Voor het hamburgermenu gaven zij als tip om de opdracht te gaan maken.
+
 
 </details>
 
