@@ -1,8 +1,10 @@
-/**************/
-/* CSS REMEDY */
-/**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+body {
+	margin: unset;
+}
+
+button {
+	padding: unset;
+	border: none;
 }
 
 
@@ -10,22 +12,24 @@
 
 
 
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-:root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+
+	padding: 1.5rem;
+
 }
 
+#nav__icons {
+	display: flex;
+	gap: 1rem;
+}
 
-
-
-
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
+#nav__icons button {
+	background-color: unset;
+	box-sizing: content-box;
+}
 
