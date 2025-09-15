@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
 body {
 	margin: unset;
 }
@@ -7,12 +13,38 @@ button {
 	border: none;
 }
 
+p {
+	margin: unset;
+
+	font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, h4 {
+	font-family: "Inter", sans-serif;
+	padding: unset;
+	margin: unset;
+}
+
+h1 {
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+ul {
+	padding: unset;
+	margin: unset;
+}
+
+li {
+	list-style: none;
+}
 
 
 
 
-
-
+/*****/
+/*Nav*/
+/*****/
 
 nav {
 	display: flex;
@@ -20,16 +52,127 @@ nav {
 	align-content: center;
 
 	padding: 1.5rem;
-
 }
 
-#nav__icons {
+nav div {
 	display: flex;
 	gap: 1rem;
 }
 
-#nav__icons button {
+nav div button {
 	background-color: unset;
 	box-sizing: content-box;
 }
+
+
+
+
+
+/********/
+/*Header*/
+/********/
+
+header > div { /* banner container */
+	overflow: hidden;
+	background-color: #f1f5f4;
+	border-bottom: solid 2px #e5e5e5;
+}
+
+header > div > div { /* banner */
+	display: flex;
+
+	font-size: 0.8rem;
+}
+
+header > div > div > * { /* banner slides */
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+
+	padding: 1rem 2rem;
+	flex-shrink: 0;
+	width: 100%;
+}
+
+
+
+
+
+	/******/
+/*Main*/
+/******/
+
+main section div:nth-of-type(1) {
+	padding: 1rem 2rem;
+}
+
+main section div:nth-of-type(1) > h2 {
+	color: #707070;
+	font-size: 1rem;
+	font-weight: 400;
+
+	margin-bottom: 1rem;
+}
+
+main section div:nth-of-type(2) {
+	display: flex;
+	align-items: center;
+	gap: 0.2rem;
+	width: fit-content;
+
+	padding: 0.5rem 1rem ;
+
+	background-color: purple;
+	border-radius: 20px;
+}
+
+
+
+
+ul:nth-of-type(1) {
+	display: flex;
+	overflow: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+}
+
+ul:nth-of-type(1) li {
+	flex-basis: 100%;
+	flex-shrink: 0;
+	scroll-snap-align: center;
+}
+
+ul:nth-of-type(1) li img {
+	width: 100%;
+}
+
+ul:nth-of-type(2) {
+	/*display: flex; alleen op desktop*/
+	display: none;
+	overflow: hidden;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	gap: 0.5rem;
+
+	scroll-target-group: auto;
+}
+
+ul:nth-of-type(3) {
+	display: flex;
+	gap: 0.5rem;
+	width: 100%;
+	overflow: auto;
+}
+
+ul:nth-of-type(3) img {
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+}
+
+
+
+
+
+
+
 
