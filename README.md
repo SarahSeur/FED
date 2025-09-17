@@ -283,7 +283,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. Vermeld de bronnen ook in je code.
 
   1. nike (Netherlands). (z.d.). Nike.com. https://www.nike.com/nl/en/
-  2. bron 2
+  2. object-fit - CSS | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit
   3. ...
 
 </details>
