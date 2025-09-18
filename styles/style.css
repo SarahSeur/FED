@@ -1,26 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
-	box-sizing: border-box;
+	box-sizing: content-box;
+	font-family: "Inter", sans-serif;
 }
 
 body {
 	margin: unset;
 }
 
-button {
-	padding: unset;
-	border: none;
-}
-
 p {
 	margin: unset;
-
-	font-family: "Inter", sans-serif;
 }
 
 h1, h2, h3, h4 {
-	font-family: "Inter", sans-serif;
 	padding: unset;
 	margin: unset;
 }
@@ -28,6 +21,10 @@ h1, h2, h3, h4 {
 h1 {
 	font-size: 1.2rem;
 	font-weight: 500;
+}
+
+h2 {
+	font-size: 1rem;
 }
 
 h3 {
@@ -44,9 +41,81 @@ li {
 	list-style: none;
 }
 
-a {
-	font-family: "Inter", sans-serif;
+a, button {
+	color: black;
+	cursor: pointer;
 }
+
+button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+
+	font-size: 1rem;
+	padding: 1.2rem 1rem;
+	background-color: white;
+	border: solid 1px lightgrey;
+	border-radius: 50px;
+}
+
+
+
+
+/********/
+/*Sizes*/
+/********/
+
+ol {
+	display: grid;
+	padding: 0 2rem;
+	gap: 0.5rem;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+ol li { /* size containers */
+	display: flex;
+}
+
+ol label { /* size */
+	display: flex;
+	justify-content: center;
+	flex-grow: 1;
+	padding: 1rem;
+
+	font-size: 1rem;
+	background-color: white;
+	border: solid 1px lightgrey;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+input[type="radio"] { /* radio button */
+	position: absolute;
+	left: -1000em;
+}
+
+
+
+
+
+/********/
+/*States*/
+/********/
+
+button:hover {
+	border-color: black;
+}
+
+label:hover { /* size container hover */
+	background-color: #f5f5f5;
+	border-color: gray;
+}
+
+label:has(:checked) { /* button = checked */
+	border-color: black;
+}
+
 
 
 
@@ -63,14 +132,19 @@ nav {
 	padding: 1.5rem;
 }
 
+nav a {
+	display: grid;
+}
+
 nav div { /* nav icons */
 	display: flex;
 	gap: 1rem;
 }
 
-nav div button { /* nav icons (only btn) */
+nav button { /* nav icons (only btn) */
 	background-color: unset;
-	box-sizing: content-box;
+	border: none;
+	padding: 0;
 }
 
 
@@ -97,6 +171,7 @@ header > div > div > * { /* banner slides */
 	display: flex;
 	align-items: center;
 	text-align: center;
+	box-sizing: border-box;
 
 	gap: 1rem;
 	padding: 1rem 2rem;
@@ -112,11 +187,11 @@ header > div > div > * { /* banner slides */
 /*Main*/
 /******/
 
-main section div:nth-of-type(1) { /* shoe title */
-	padding: 1rem 2rem 0 2rem;
+main section > div:nth-of-type(1) { /* shoe title */
+	margin: 1rem 2rem;
 }
 
-main section div:nth-of-type(1) > h2 { /* shoe title h2 */
+main section > div:nth-of-type(1) > h2 { /* shoe title h2 */
 	color: #707070;
 	font-size: 1rem;
 	font-weight: 400;
@@ -124,11 +199,15 @@ main section div:nth-of-type(1) > h2 { /* shoe title h2 */
 	margin-bottom: 1rem;
 }
 
-main section div:nth-of-type(2) { /* rating container */
-	display: flex;
+main section > div:nth-of-type(2) { /* rating + shoe slide wrapper */
 	position: relative;
-	top: 3.5rem;
-	right: -1.5rem;
+}
+
+main section > div:nth-of-type(2) div { /* rating container */
+	display: flex;
+	position: absolute;
+	top: 1.5rem;
+	left: 2rem;
 	align-items: center;
 
 	gap: 0.2rem;
@@ -147,7 +226,7 @@ main section div:nth-of-type(2) { /* rating container */
 /*Ul*/
 /****/
 
-ul:nth-of-type(1) { /* shoe slide container */
+main section > div:nth-of-type(2) ul { /* shoe slide container */
 	display: flex;
 	overflow: auto;
 	scroll-snap-type: x mandatory;
@@ -155,17 +234,17 @@ ul:nth-of-type(1) { /* shoe slide container */
 	gap: .2rem;
 }
 
-ul:nth-of-type(1) li { /* shoe slide */
+main section > div:nth-of-type(2) li { /* shoe slide */
 	flex-basis: 100%;
 	flex-shrink: 0;
 	scroll-snap-align: center;
 }
 
-ul:nth-of-type(1) li img { /* shoe slide images */
+main section > div:nth-of-type(2) li img { /* shoe slide images */
 	width: 100%;
 }
 
-ul:nth-of-type(2) { /* shoe slide sidebar !only desktop! */
+main section > ul:nth-of-type(1) { /* shoe slide sidebar !only desktop! */
 	/*display: flex; alleen op desktop*/
 	display: none;
 	overflow: hidden;
@@ -176,14 +255,14 @@ ul:nth-of-type(2) { /* shoe slide sidebar !only desktop! */
 	scroll-target-group: auto;
 }
 
-ul:nth-of-type(3) { /* shoe slide colors */
+main section > ul:nth-of-type(2) { /* shoe slide colors */
 	display: flex;
 	gap: 0.5rem;
 	width: 100%;
 	overflow: auto;
 }
 
-ul:nth-of-type(3) img { /* shoe slide colors images */
+main section > ul:nth-of-type(2) img { /* shoe slide colors images */
 	aspect-ratio: 1 / 1;
 	/* object-fit - CSS | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit */
 	object-fit: cover;
@@ -197,7 +276,7 @@ ul:nth-of-type(3) img { /* shoe slide colors images */
 /*Size*/
 /******/
 
-main section div:nth-of-type(3) { /* size title */
+main section > div:nth-of-type(3) { /* size title */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -205,16 +284,54 @@ main section div:nth-of-type(3) { /* size title */
 	padding: 2rem 2rem 0 2rem;
 }
 
-main section div:nth-of-type(3) a { /* size title link */
+main section > div:nth-of-type(3) a { /* size title link */
 	display: flex;
 	align-items: center;
 
 	gap: 0.5rem;
 
-	color: black;
 	font-size: 0.8rem;
 	font-weight: 600;
 }
+
+
+
+
+
+/********/
+/*Klarna*/
+/********/
+
+[class="klarna"], [class="klarna"] p { /* klarna - checkout */
+	display: flex;
+	justify-content: center;
+
+	gap: 0.5rem;
+	margin-top: 1rem;
+}
+
+
+
+[class="save-buttons"] { /* bag + save btn */
+	display: flex;
+	flex-direction: column;
+
+	gap: 1rem;
+	padding: 1rem 2rem 0 2rem;
+}
+
+[class="save-buttons"] button:nth-of-type(1) {
+	background-color: black;
+	color: white;
+	border-color: black;
+}
+
+
+
+
+
+
+
 
 
 
