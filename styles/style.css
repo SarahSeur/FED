@@ -1,49 +1,240 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+:root {
+	--grey-background: #f5f5f5;
+    --main-margin: 2rem;
+}
+
 * {
 	box-sizing: content-box;
 	font-family: "Inter", sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 body {
 	margin: unset;
 }
 
-p {
-	margin: unset;
-}
+
+
+
+/*
+    Typography
+*/
 
 h1, h2, h3, h4 {
-	padding: unset;
-	margin: unset;
+    padding: unset;
+    margin: unset;
 }
 
 h1 {
-	font-size: 1.2rem;
-	font-weight: 500;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 h2 {
-	font-size: 1rem;
+    font-size: 1rem;
 }
 
 h3 {
-	font-size: 1rem;
-	font-weight: 600;
+    font-size: 1rem;
+    font-weight: 600;
 }
+
+h4 {
+    color: #707070;
+    font-weight: 400;
+}
+
+p:not(:first-child) {
+    margin-top: 0.5rem;
+}
+
+p:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+
+img + p {
+    margin-top: 0 !important;
+}
+
+
+
+
+
+/*
+    Base layout
+*/
+
+section, main, article, footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+main {
+    gap: 5rem;
+    margin: 1.5rem var(--main-margin);
+}
+
+article {
+    gap: 1rem;
+}
+
+
+
+
+
+/*
+    Footer
+*/
+
+footer {
+    margin: 1.5rem var(--main-margin);
+    margin-top: 6rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-top: 1px solid lightgray;
+    padding-top: 2rem;
+}
+
+footer summary {
+    font-size: 1rem;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer li + li {
+    padding-top: 0.5rem;
+}
+
+footer a {
+    color: #707070;
+}
+
+footer div {
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+}
+
+footer div * {
+    margin: 0 !important;
+}
+
+
+
+
+
+/*
+    Header
+*/
+
+header > div { /* banner container */
+    overflow: hidden;
+    background-color: var(--grey-background);
+    border-bottom: solid 2px #e5e5e5;
+}
+
+header > div > div { /* banner */
+    display: flex;
+    font-size: 0.8rem;
+}
+
+header div:has( > p:first-child),
+header div + p { /* banner slides */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+
+    gap: 1rem;
+    padding: 1rem var(--main-margin);
+    flex-shrink: 0;
+    width: 100%;
+}
+
+header p {
+    margin: 0 !important;
+}
+
+
+
+
+
+/*
+    Nav
+*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+    padding: 1.5rem;
+}
+
+nav a {
+    display: grid;
+}
+
+nav div { /* nav icons */
+    display: flex;
+    gap: 1rem;
+}
+
+nav button { /* nav icons (only btn) */
+    background-color: unset;
+    border: none;
+    padding: 0;
+}
+
+
+
+
+
+/*
+    Lists
+*/
 
 ul {
 	padding: unset;
 	margin: unset;
 }
 
-li {
-	list-style: none;
+ul:has(img) { /* shoe slide container */
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    gap: .2rem;
+    margin: 0 calc(var(--main-margin) * -1);
+    padding: 0 2rem;
 }
 
-a, button {
-	color: black;
-	cursor: pointer;
+ul img {
+    border-radius: 0.25rem;
+    background-color: var(--grey-background);
+}
+
+ul:has(img) li {
+    list-style-type: none;
+}
+
+
+
+
+
+/*
+    Clickables
+*/
+
+a, button, summary {
+    color: black;
+    cursor: pointer;
 }
 
 button {
@@ -55,214 +246,94 @@ button {
 	font-size: 1rem;
 	padding: 1.2rem 1rem;
 	background-color: white;
-	border: solid 1px lightgrey;
+	border: solid 2px lightgrey;
 	border-radius: 50px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-
-
-
-/********/
-/*Sizes*/
-/********/
-
-ol {
-	display: grid;
-	padding: 0 2rem;
-	gap: 0.5rem;
-	grid-template-columns: repeat(3, 1fr);
+summary {
+    font-size: 1.2rem;
 }
 
-ol li { /* size containers */
-	display: flex;
+details {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid lightgray;
 }
 
-ol label { /* size */
-	display: flex;
-	justify-content: center;
-	flex-grow: 1;
-	padding: 1rem;
-
-	font-size: 1rem;
-	background-color: white;
-	border: solid 1px lightgrey;
-	border-radius: 5px;
-	cursor: pointer;
-}
-
-input[type="radio"] { /* radio button */
-	position: absolute;
-	left: -1000em;
+details::details-content{
+    /*Graham, G. (2025a, januari 13). ::details-content | CSS-Tricks. CSS-Tricks. https://css-tricks.com/almanac/pseudo-selectors/d/details-content/*/
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0.75rem 0;
 }
 
 
 
 
 
-/********/
-/*States*/
-/********/
+/*
+    Shoe slides
+*/
 
-button:hover {
-	border-color: black;
+div:has(h1) h2 { /* Product title */
+    color: #707070;
+    font-size: 1rem;
+    font-weight: 400;
+
+    margin-bottom: 1rem;
 }
 
-label:hover { /* size container hover */
-	background-color: #f5f5f5;
-	border-color: gray;
+.shoe-slide {
+    margin: 0 calc(var(--main-margin) * -1);
 }
 
-label:has(:checked) { /* button = checked */
-	border-color: black;
-}
-
-
-
-
-
-/*****/
-/*Nav*/
-/*****/
-
-nav {
-	display: flex;
-	justify-content: space-between;
-	align-content: center;
-
-	padding: 1.5rem;
-}
-
-nav a {
-	display: grid;
-}
-
-nav div { /* nav icons */
-	display: flex;
-	gap: 1rem;
-}
-
-nav button { /* nav icons (only btn) */
-	background-color: unset;
-	border: none;
-	padding: 0;
-}
-
-
-
-
-
-/********/
-/*Header*/
-/********/
-
-header > div { /* banner container */
-	overflow: hidden;
-	background-color: #f5f5f5;
-	border-bottom: solid 2px #e5e5e5;
-}
-
-header > div > div { /* banner */
-	display: flex;
-
-	font-size: 0.8rem;
-}
-
-header > div > div > * { /* banner slides */
-	display: flex;
-	align-items: center;
-	text-align: center;
-	box-sizing: border-box;
-
-	gap: 1rem;
-	padding: 1rem 2rem;
-	flex-shrink: 0;
-	width: 100%;
-}
-
-
-
-
-
-/******/
-/*Main*/
-/******/
-
-main section > div:nth-of-type(1) { /* shoe title */
-	margin: 1rem 2rem;
-}
-
-main section > div:nth-of-type(1) > h2 { /* shoe title h2 */
-	color: #707070;
-	font-size: 1rem;
-	font-weight: 400;
-
-	margin-bottom: 1rem;
-}
-
-main section > div:nth-of-type(2) { /* rating + shoe slide wrapper */
+.shoe-slide > div { /* rating wrapper */
 	position: relative;
 }
 
-main section > div:nth-of-type(2) div { /* rating container */
-	display: flex;
-	position: absolute;
-	top: 1.5rem;
-	left: 2rem;
-	align-items: center;
+.shoe-slide div:has(> img) { /* rating container */
+    display: flex;
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+    align-items: center;
 
-	gap: 0.2rem;
-	width: fit-content;
-	padding: 0.5rem 1rem ;
+    gap: 0.2rem;
+    width: fit-content;
+    padding: 0.5rem 1rem ;
 
-	background-color: white;
-	border-radius: 20px;
+    background-color: white;
+    border-radius: 20px;
 }
 
-
-
-
-
-/****/
-/*Ul*/
-/****/
-
-main section > div:nth-of-type(2) ul { /* shoe slide container */
-	display: flex;
-	overflow: auto;
-	scroll-snap-type: x mandatory;
-	scroll-behavior: smooth;
-	gap: .2rem;
+.shoe-slide div li { /* shoe slide */
+    flex-basis: 100%;
+    flex-shrink: 0;
+    scroll-snap-align: center;
 }
 
-main section > div:nth-of-type(2) li { /* shoe slide */
-	flex-basis: 100%;
-	flex-shrink: 0;
-	scroll-snap-align: center;
+.shoe-slide div li img { /* shoe slide images */
+    width: 100%;
 }
 
-main section > div:nth-of-type(2) li img { /* shoe slide images */
-	width: 100%;
+.shoe-slide > ul:nth-of-type(1) { /* shoe slide sidebar only desktop */
+    /*display: flex; alleen op desktop*/
+    display: none;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scroll-target-group: auto;
+    gap: 0.5rem;
 }
 
-main section > ul:nth-of-type(1) { /* shoe slide sidebar !only desktop! */
-	/*display: flex; alleen op desktop*/
-	display: none;
-	overflow: hidden;
-	scroll-snap-type: x mandatory;
-	scroll-behavior: smooth;
-	gap: 0.5rem;
-
-	scroll-target-group: auto;
+.shoe-slide ul {
+    margin: 0;
+    padding: 0;
 }
 
-main section > ul:nth-of-type(2) { /* shoe slide colors */
-	display: flex;
-	gap: 0.5rem;
-	width: 100%;
-	overflow: auto;
-}
-
-main section > ul:nth-of-type(2) img { /* shoe slide colors images */
+.shoe-slide ul img { /* shoe slide colors images */
 	aspect-ratio: 1 / 1;
 	/* object-fit - CSS | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit */
 	object-fit: cover;
@@ -272,19 +343,17 @@ main section > ul:nth-of-type(2) img { /* shoe slide colors images */
 
 
 
-/******/
-/*Size*/
-/******/
+/*
+    Shoe sizes
+*/
 
-main section > div:nth-of-type(3) { /* size title */
+section > div:nth-of-type(3) { /* size header title */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
-	padding: 2rem 2rem 0 2rem;
 }
 
-main section > div:nth-of-type(3) a { /* size title link */
+section > div:nth-of-type(3) a { /* size header link */
 	display: flex;
 	align-items: center;
 
@@ -294,49 +363,104 @@ main section > div:nth-of-type(3) a { /* size title link */
 	font-weight: 600;
 }
 
+ol { /* size container */
+    display: grid;
+    gap: 0.5rem;
+
+    grid-template-columns: repeat(3, 1fr);
+}
+
+ol li { /* size item */
+    list-style: none;
+}
+
+ol label { /* size */
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 1rem;
+
+    font-size: 1rem;
+    background-color: white;
+    border: solid 1px lightgrey;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="radio"] { /* radio button */
+	opacity: 0; /* Niet verborgen voor screen readers, display: none en visibility: none wel verborgen */
+    position: absolute;
+}
 
 
 
 
-/********/
-/*Klarna*/
-/********/
 
-[class="klarna"], [class="klarna"] p { /* klarna - checkout */
+/*
+    Checkout
+*/
+
+.checkout-buttons p { /* klarna */
 	display: flex;
 	justify-content: center;
-
 	gap: 0.5rem;
-	margin-top: 1rem;
 }
 
-
-
-[class="save-buttons"] { /* bag + save btn */
-	display: flex;
-	flex-direction: column;
-
-	gap: 1rem;
-	padding: 1rem 2rem 0 2rem;
-}
-
-[class="save-buttons"] button:nth-of-type(1) {
+[class="checkout-buttons"] button:nth-of-type(1) { /* bag button */
 	background-color: black;
 	color: white;
 	border-color: black;
+    margin: 1rem 0;
 }
 
 
 
 
 
+/*
+    Reviews
+*/
+
+[class="review"] div:has(img) { /* write a review */
+	display: flex;
+	align-items: center;
+}
+
+[class="review"] img + h4 { /* write a review text */
+	padding-left: 0.25rem;
+}
+
+article div { /* rating, name */
+	display: flex;
+}
 
 
 
 
 
+/*
+    States
+*/
 
+button:hover {
+    border-color: black;
+}
 
+[class="checkout-buttons"] button:nth-of-type(1):hover {
+    opacity: 50%;
+}
 
+[class="checkout-buttons"] button:nth-of-type(1):active {
+    background-color: #303030;
+    opacity: 100%;
+}
 
+label:hover { /* size container */
+    background-color: var(--grey-background);
+    outline: solid 2px black;
+    /* outline - CSS | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/CSS/outline */
+}
 
+label:has(:checked) {
+    outline: solid 2px black;
+}

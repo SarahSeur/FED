@@ -141,7 +141,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   maakten dat ik het dan makkelijk en snel begreep wat er in de les verteld werd. Soms waren opdrachten wat lastig en dan kwam ik 
   er even niet uit. Ik heb dan lang gepuzzeld of dingen opgezocht om te begrijpen waarom er iets niet werkt bijvoorbeeld.
 
-  Coderen.. etc
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -176,24 +175,28 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Het opstellen van de html en css was in het begin goed te doen. Het was wel soms even kijken 
+  welke html elementen ik het best kon gebruiken. Het gebruiken van geen classes was voor mij 
+  ook wel eventjes wennen, de selectoren gebruiken lukte wel goed, maar het is dan wel lastig 
+  om terug te kijken van wat wat is. Het maken van de schoen maat knoppen was een leuke uitdaging,
+  ik gebruikte eerst buttons, want dat zijn ze. Ik kwam er later achter dat het eigenlijk radio
+  buttons zijn. Ik heb dit dus toegepast en gebruik gemaakt van een input en label.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1 (ik) | student 2          | student 3    | student 4        |
-  |----------------|--------------------| ---          | ---              |
-  | Responsive     | Carousel maken     | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1 (ik)                                | student 2      | student 3      | student 4     |
+  |-----------------------------------------------|----------------|----------------|---------------|
+  | Hoe begin ik met de site responsive te maken? | Carousel maken | Background img | en dan ik dat |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Ik kan het best beginnen door te kijken waar de site begint te 'breken' en dan verder 
+    met het responsive maken.
+  - Het is goed om nog wat transities toe te voegen voor een 'fijner' effect.
+  - Alle links kunnen naar de andere pagina verwijzen, zo kan ik makkelijk het en weer.
 
 </details>
 
@@ -284,6 +287,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   1. nike (Netherlands). (z.d.). Nike.com. https://www.nike.com/nl/en/
   2. object-fit - CSS | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit
-  3. ...
+  3. outline - CSS | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/CSS/outline 
+  4. Graham, G. (2025b, mei 27). Using & Styling the Details Element | CSS-Tricks. CSS-Tricks. https://css-tricks.com/using-styling-the-details-element/
+  5. Graham, G. (2025a, januari 13). ::details-content | CSS-Tricks. CSS-Tricks. https://css-tricks.com/almanac/pseudo-selectors/d/details-content/
 
 </details>
