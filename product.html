@@ -641,18 +641,19 @@
                     <img
                         src="./images/nike-cortez.avif"
                         alt="Witte schoenen met zalmkleurige nike logo, grijze hiel en blauwe zoolrand."
-                        width="350"
+                        width="250"
                     />
                     <h3>Nike Cortez</h3>
                     <p>Women's Shoes</p>
                     <p>€53.99</p>
-                    <p>€89.99</p>
+                    <p><s>€89.99</s></p>
+<!-- The Strikethrough element - HTML | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/s-->
                 </li>
                 <li>
                     <img
                         src="./images/nike-initiator.avif"
                         alt="Witte schoenen met rode details en zilveren accenten."
-                        width="350"
+                        width="250"
                     />
                     <h3>Nike Initiator</h3>
                     <p>Women's Shoes</p>
@@ -662,7 +663,7 @@
                     <img
                         src="./images/nike-airforce.avif"
                         alt="Volledige witte schoenen"
-                        width="350"
+                        width="250"
                     />
                     <h3>Nike Air Force 1 '07</h3>
                     <p>Women's Shoes</p>
@@ -672,7 +673,7 @@
                     <img
                         src="./images/nike-p6000.avif"
                         alt="Zilver blauwachtige kleuren met zwarte accenten."
-                        width="350"
+                        width="250"
                     />
                     <h3>Nike P-6000</h3>
                     <p>Shoes</p>
@@ -683,6 +684,42 @@
     </main>
 
     <footer>
+        <form>
+            <div>
+                <label for="name">Naam*</label>
+                <input type="text" id="name" name="name" placeholder="Jan" required/>
+            </div>
+
+            <div>
+                <label for="mail">E-mail*</label>
+                <input type="email" id="mail" name="mail" placeholder="jan@gmail.com" required/>
+            </div>
+
+            <div>
+                <label for="telefoon">Telefoon nummer</label>
+                <input type="tel" id="telefoon" name="telefoon" placeholder="(31+)6 12345678"/>
+            </div>
+
+            <div>
+                <label for="password">Wachtwoord*<span> (At least 5 characters)</span></label>
+                <input type="password" id="password" name="password" placeholder="*****" minlength="5" required/>
+            </div>
+
+            <div>
+                <label for="textarea">Opmerkingen</label>
+                <textarea id="textarea" name="textarea" placeholder="Typ hier uw opmerking.." rows="6"></textarea>
+
+                <input type="submit">
+            </div>
+
+
+
+
+<!-- Bro Code. (2021, 1 september). Learn HTML forms in 8 minutes 📝 [Video]. YouTube. https://www.youtube.com/watch?v=2O8pkybH6po-->
+        </form>
+
+
+
         <details open name="footer-details">
             <summary>Resources</summary>
             <ul>

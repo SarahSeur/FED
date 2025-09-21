@@ -285,10 +285,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. nike (Netherlands). (z.d.). Nike.com. https://www.nike.com/nl/en/
-  2. object-fit - CSS | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit
-  3. outline - CSS | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/CSS/outline 
-  4. Graham, G. (2025b, mei 27). Using & Styling the Details Element | CSS-Tricks. CSS-Tricks. https://css-tricks.com/using-styling-the-details-element/
-  5. Graham, G. (2025a, januari 13). ::details-content | CSS-Tricks. CSS-Tricks. https://css-tricks.com/almanac/pseudo-selectors/d/details-content/
+1. nike (Netherlands). (z.d.). Nike.com. https://www.nike.com/nl/en/
+2. object-fit - CSS | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit
+3. outline - CSS | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/CSS/outline 
+4. Graham, G. (2025b, mei 27). Using & Styling the Details Element | CSS-Tricks. CSS-Tricks. https://css-tricks.com/using-styling-the-details-element/
+5. Graham, G. (2025a, januari 13). ::details-content | CSS-Tricks. CSS-Tricks. https://css-tricks.com/almanac/pseudo-selectors/d/details-content/
+6.  The Strikethrough element - HTML | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/s
+7. Bro Code. (2021, 1 september). Learn HTML forms in 8 minutes 📝 [Video]. YouTube. https://www.youtube.com/watch?v=2O8pkybH6po
+8. interpolate-size - CSS | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/CSS/interpolate-size
+9. transition-behavior - CSS | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/CSS/transition-behavior
+10. 
 
 </details>

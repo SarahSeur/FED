@@ -3,6 +3,10 @@
 :root {
 	--grey-background: #f5f5f5;
     --main-margin: 2rem;
+    --text-color: #707070;
+
+    interpolate-size: allow-keywords;
+    /* transistions op een lengte - interpolate-size - CSS | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/CSS/interpolate-size */
 }
 
 * {
@@ -15,6 +19,9 @@
 body {
 	margin: unset;
 }
+
+
+
 
 
 
@@ -43,7 +50,7 @@ h3 {
 }
 
 h4 {
-    color: #707070;
+    color: var(--text-color);
     font-weight: 400;
 }
 
@@ -57,6 +64,29 @@ p:not(:last-child) {
 
 img + p {
     margin-top: 0 !important;
+}
+
+s {
+    text-decoration: none;
+    position: relative;
+    color: var(--text-color);
+}
+
+s:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: rotate(-10deg);
+    border-top: 2px solid;
+    border-color: currentColor;
+}
+
+
+li:has(h3) p:first-of-type {
+    color: var(--text-color);
+    font-size: 0.9rem;
 }
 
 
@@ -112,7 +142,7 @@ footer li + li {
 }
 
 footer a {
-    color: #707070;
+    color: var(--text-color);
 }
 
 footer div {
@@ -259,14 +289,27 @@ summary {
 details {
     padding: 0.75rem 0;
     border-bottom: 1px solid lightgray;
+
+
 }
 
 details::details-content{
-    /*Graham, G. (2025a, januari 13). ::details-content | CSS-Tricks. CSS-Tricks. https://css-tricks.com/almanac/pseudo-selectors/d/details-content/*/
+    /* ::details-content, selecteer binnen in de details - Stylen binnen in de details - Graham, G. (2025a, januari 13). ::details-content | CSS-Tricks. CSS-Tricks. https://css-tricks.com/almanac/pseudo-selectors/d/details-content/*/
+    /* Kevin Powell. (2024, 30 oktober). Animate details & summary with a few lines of CSS [Video]. YouTube. https://www.youtube.com/watch?v=Vzj3jSUbMtI */
     display: flex;
     flex-direction: column;
     gap: 2rem;
     padding: 0.75rem 0;
+
+    height: 0;
+    overflow: hidden;
+    transition: height 1s, content-visibility 1s;
+    transition-behavior: allow-discrete;
+    /* Visibility kan gebruikt worden in de transition - transition-behavior - CSS | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/CSS/transition-behavior */
+}
+
+details[open]::details-content {
+    height: auto;
 }
 
 
@@ -278,7 +321,7 @@ details::details-content{
 */
 
 div:has(h1) h2 { /* Product title */
-    color: #707070;
+    color: var(--text-color);
     font-size: 1rem;
     font-weight: 400;
 
@@ -464,3 +507,100 @@ label:hover { /* size container */
 label:has(:checked) {
     outline: solid 2px black;
 }
+
+[class="checkout-buttons"] button:nth-of-type(1):focus {
+    outline-color: indianred;
+
+}
+
+nav div *:hover {
+    transform: scale(1.1);
+    transition: 500ms;
+}
+
+
+
+
+
+/*
+    Form
+*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+}
+
+form input, textarea {
+    background-color: var(--grey-background);
+    border: solid 2px lightgrey;
+    padding: 0.5rem 0.75rem;
+
+    border-radius: 0.25rem;
+}
+
+form input:not([type="submit"]):valid {
+    border-color: green;
+}
+
+form input:invalid {
+    border-color: darkred;
+}
+
+form input:placeholder-shown {
+    border-color: lightgray !important;
+}
+
+[for="password"] span {
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+form label {
+    width: fit-content;
+    background-color: var(--grey-background);
+    transform: translate(0.5rem, 0.8rem);
+    transition: transform 500ms, background-color 3s;
+}
+
+label:has(+ input:focus) {
+    transform: translate(0, 0);
+    background-color: white;
+}
+
+label:has(+ textarea:focus) {
+    transform: translate(0, 0);
+    background-color: white;
+}
+
+form label:hover {
+    background-color: unset;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+
+[type="submit"] {
+    border-color: darkgray;
+    background-color: lightgray;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+[type="submit"]:hover {
+    color: white;
+    background-color: darkgray;
+}
+
