@@ -294,6 +294,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 7. Bro Code. (2021, 1 september). Learn HTML forms in 8 minutes 📝 [Video]. YouTube. https://www.youtube.com/watch?v=2O8pkybH6po
 8. interpolate-size - CSS | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/CSS/interpolate-size
 9. transition-behavior - CSS | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/CSS/transition-behavior
-10. 
+ 
 
 </details>
