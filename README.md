@@ -294,6 +294,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 7. Bro Code. (2021, 1 september). Learn HTML forms in 8 minutes 📝 [Video]. YouTube. https://www.youtube.com/watch?v=2O8pkybH6po
 8. interpolate-size - CSS | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/CSS/interpolate-size
 9. transition-behavior - CSS | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/CSS/transition-behavior
- 
+10. :placeholder-shown - CSS | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/CSS/:placeholder-shown
+11. The Dialog element - HTML | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog
+12. The Button element - HTML | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button#command
+13. HTML autofocus global attribute - HTML | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/autofocus
+14. Coyier, C. (2010, 16 juli). Test if Element Supports Attribute | CSS-Tricks. CSS-Tricks. https://css-tricks.com/snippets/javascript/test-if-element-supports-attribute/
+
+
 
 </details>

@@ -12,16 +12,38 @@
     <link rel="icon" type="image/svg+xml" href="images/icons/logo.svg">
 </head>
 
-
-
 <body>
     <header>
         <nav>
-            <img
-                src="./images/icons/logo.svg"
-                height="24"
-                alt="Logo van ike"
-            />
+            <a href="index.html">
+                <img
+                    src="./images/icons/logo.svg"
+                    height="24"
+                    alt="home"
+                />
+            </a>
+
+            <ul>
+                <li>
+                    <a href="index.html">New</a>
+                </li>
+                <li>
+                    <a href="index.html">Men</a>
+                </li>
+                <li>
+                    <a href="index.html">Women</a>
+                </li>
+                <li>
+                    <a href="index.html">Kids</a>
+                </li>
+                <li>
+                    <a href="index.html">Sport</a>
+                </li>
+                <li>
+                    <a href="index.html">Sportswear</a>
+                </li>
+            </ul>
+
             <div>
                 <button>
                     <img
@@ -47,7 +69,7 @@
                         alt="Open je winkelmandje"
                     />
                 </a>
-                <button>
+                <button command="show-modal" commandfor="hamburger">
                     <img
                         src="./images/icons/menu.svg"
                         width="24"
@@ -57,6 +79,42 @@
                 </button>
             </div>
         </nav>
+
+<!-- The Dialog element - HTML | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog-->
+<!-- The Button element - HTML | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button#command-->
+        <dialog closedby="any" id="hamburger">
+            <nav>
+                <button command="close" commandfor="hamburger" autofocus>
+<!--                    HTML autofocus global attribute - HTML | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/autofocus-->
+                    <img
+                        src="./images/icons/cross.svg"
+                        alt="sluit hamburger menu"
+                        width="24"
+                        height="24"
+                    />
+                </button>
+                <ul>
+                    <li>
+                        <a href="index.html">New <img src="./images/icons/arrow.svg" alt="" width="20" height="20"></a>
+                    </li>
+                    <li>
+                        <a href="index.html">Men <img src="./images/icons/arrow.svg" alt="" width="20" height="20"></a>
+                    </li>
+                    <li>
+                        <a href="index.html">Women <img src="./images/icons/arrow.svg" alt="" width="20" height="20"></a>
+                    </li>
+                    <li>
+                        <a href="index.html">Kids <img src="./images/icons/arrow.svg" alt="" width="20" height="20"></a>
+                    </li>
+                    <li>
+                        <a href="index.html">Sport <img src="./images/icons/arrow.svg" alt="" width="20" height="20"></a>
+                    </li>
+                    <li>
+                        <a href="index.html">Sportswear <img src="./images/icons/arrow.svg" alt="" width="20" height="20"></a>
+                    </li>
+                </ul>
+            </nav>
+        </dialog>
 
         <div>
             <div>
