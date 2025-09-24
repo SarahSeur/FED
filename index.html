@@ -13,49 +13,109 @@
 </head>
 
 <body>
-	<header>
-		<nav>
-			<img
-				src="./images/icons/logo.svg"
-				height="24"
-				alt="Logo van ike"
-			/>
-			<div id="nav__icons">
-				<button>
-					<img
-						src="./images/icons/search.svg"
-						width="24"
-						height="24"
-						alt="Open het zoek menu"
-					/>
-				</button>
-				<a href="#">
-					<img
-						src="./images/icons/account.svg"
-						width="24"
-						height="24"
-						alt="Open het inlog menu"
-					/>
-				</a>
-				<a href="#">
-					<img
-						src="./images/icons/bag.svg"
-						width="24"
-						height="24"
-						alt="Open je winkelmandje"
-					/>
-				</a>
-				<button>
-					<img
-						src="./images/icons/menu.svg"
-						width="24"
-						height="24"
-						alt="Open het hamburger menu"
-					/>
-				</button>
-			</div>
-		</nav>
-	</header>
+    <header>
+        <nav>
+            <a href="product.html">
+                <img
+                    src="./images/icons/logo.svg"
+                    height="24"
+                    alt="home"
+                />
+            </a>
+
+            <ul>
+                <li>
+                    <a href="product.html">New</a>
+                </li>
+                <li>
+                    <a href="product.html">Men</a>
+                </li>
+                <li>
+                    <a href="product.html">Women</a>
+                </li>
+                <li>
+                    <a href="product.html">Kids</a>
+                </li>
+                <li>
+                    <a href="product.html">Sport</a>
+                </li>
+                <li>
+                    <a href="product.html">Sportswear</a>
+                </li>
+            </ul>
+
+            <div>
+                <button>
+                    <img
+                        src="./images/icons/search.svg"
+                        width="24"
+                        height="24"
+                        alt="Open het zoek menu"
+                    />
+                </button>
+                <a href="product.html">
+                    <img
+                        src="./images/icons/account.svg"
+                        width="24"
+                        height="24"
+                        alt="Open het inlog menu"
+                    />
+                </a>
+                <a href="product.html">
+                    <img
+                        src="./images/icons/bag.svg"
+                        width="24"
+                        height="24"
+                        alt="Open je winkelmandje"
+                    />
+                </a>
+                <button command="show-modal" commandfor="hamburger">
+                    <img
+                        src="./images/icons/menu.svg"
+                        width="24"
+                        height="24"
+                        alt="Open het hamburger menu"
+                    />
+                </button>
+            </div>
+        </nav>
+
+        <!-- The Dialog element - HTML | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog-->
+        <!-- The Button element - HTML | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button#command-->
+        <dialog closedby="any" id="hamburger">
+            <nav>
+                <button command="close" commandfor="hamburger" autofocus>
+                    <!--                    HTML autofocus global attribute - HTML | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/autofocus-->
+                    <img
+                        src="./images/icons/cross.svg"
+                        alt="sluit hamburger menu"
+                        width="24"
+                        height="24"
+                    />
+                </button>
+                <ul>
+                    <li>
+                        <a href="product.html">New <img src="./images/icons/arrow.svg" alt="" width="20" height="20"></a>
+                    </li>
+                    <li>
+                        <a href="product.html">Men <img src="./images/icons/arrow.svg" alt="" width="20" height="20"></a>
+                    </li>
+                    <li>
+                        <a href="product.html">Women <img src="./images/icons/arrow.svg" alt="" width="20" height="20"></a>
+                    </li>
+                    <li>
+                        <a href="product.html">Kids <img src="./images/icons/arrow.svg" alt="" width="20" height="20"></a>
+                    </li>
+                    <li>
+                        <a href="product.html">Sport <img src="./images/icons/arrow.svg" alt="" width="20" height="20"></a>
+                    </li>
+                    <li>
+                        <a href="product.html">Sportswear <img src="./images/icons/arrow.svg" alt="" width="20" height="20"></a>
+                    </li>
+                </ul>
+            </nav>
+        </dialog>
+    </header>
 
 	<main>
 		<section>
@@ -93,123 +153,194 @@
 			</article>
 		</section>
 
-		<section>
-			<h2>Shop Our Icons</h2>
-			<ul>
-				<li>
-					<img 
-						src="" 
-						alt=""
-					/>
-					<a href="#">Air Force 1</a>
-				</li>
-				<li>
-					<img
-						src=""
-						alt=""
-					/>
-					<a href="#">Air Max</a>
-				</li>
-				<li>
-					<img
-						src=""
-						alt=""
-					/>
-					<a href="#">P-6000</a>
-				</li>
-			</ul>
-			<details>
-				<summary>Shoes</summary>
-				<p>Black Running Shoes</p>
-				<p>White Running Shoes</p>
-				<p>Nike P-6000</p>
-				<p>Nike Initiator</p>
-				<p>V2K Run Trainers</p>
-				<p>Nike Shox</p>
-				<p>Nike Waffle Trainers</p>
-				<p>Nike Cortez</p>
-				<p>Nike Vomero</p>
-				<p>Black Trainers</p>
-				<p>Nike Motiva Shoes</p>
-			</details>
-			<details>
-				<summary>Clothing</summary>
-				<p>Yoga Trousers</p>
-				<p>Tech Fleece Joggers</p>
-				<p>Tech Fleece</p>
-				<p>School Shoes</p>
-				<p>School Bags & Backpacks</p>
-			</details>
-			<details>
-				<summary>Kids'</summary>
-				<p>Girls' Black Shoes</p>
-				<p>Kids' Black Shoes</p>
-				<p>Kids' School Clothing</p>
-				<p>Boys' School Shoes</p>
-				<p>Girls' School Shoes</p>
-				<p>Kids' School Shoes</p>
-			</details>
-			<details>
-				<summary>Featured</summary>
-				<p>Football Club Teams</p>
-				<p>Football</p>
-				<p>Nike England</p>
-				<p>Nike Run Club</p>
-				<p>Nike Training Club</p>
-				<p>Gift Ideas</p>
-			</details>
-		</section>
+        <section>
+            <h2>Shop Our Icons</h2>
+            <ul>
+                <li>
+                    <img
+                        src="./images/nike-cortez.avif"
+                        alt="Witte schoenen met zalmkleurige nike logo, grijze hiel en blauwe zoolrand."
+                        width="250"
+                    />
+                    <h3>Nike Cortez</h3>
+                    <p>Women's Shoes</p>
+                    <p>€53.99</p>
+                    <p><s>€89.99</s></p>
+                    <!-- The Strikethrough element - HTML | MDN. (z.d.). https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/s-->
+                </li>
+                <li>
+                    <img
+                            src="./images/nike-initiator.avif"
+                            alt="Witte schoenen met rode details en zilveren accenten."
+                            width="250"
+                    />
+                    <h3>Nike Initiator</h3>
+                    <p>Women's Shoes</p>
+                    <p>€79.99</p>
+                </li>
+                <li>
+                    <img
+                            src="./images/nike-airforce.avif"
+                            alt="Volledige witte schoenen"
+                            width="250"
+                    />
+                    <h3>Nike Air Force 1 '07</h3>
+                    <p>Women's Shoes</p>
+                    <p>€119.99</p>
+                </li>
+                <li>
+                    <img
+                            src="./images/nike-p6000.avif"
+                            alt="Zilver blauwachtige kleuren met zwarte accenten."
+                            width="250"
+                    />
+                    <h3>Nike P-6000</h3>
+                    <p>Shoes</p>
+                    <p>€109.99</p>
+                </li>
+            </ul>
+        </section>
+
+        <details>
+            <summary>Shoes</summary>
+            <p>Black Running Shoes</p>
+            <p>White Running Shoes</p>
+            <p>Nike P-6000</p>
+            <p>Nike Initiator</p>
+            <p>V2K Run Trainers</p>
+            <p>Nike Shox</p>
+            <p>Nike Waffle Trainers</p>
+            <p>Nike Cortez</p>
+            <p>Nike Vomero</p>
+            <p>Black Trainers</p>
+            <p>Nike Motiva Shoes</p>
+        </details>
+        <details>
+            <summary>Clothing</summary>
+            <p>Yoga Trousers</p>
+            <p>Tech Fleece Joggers</p>
+            <p>Tech Fleece</p>
+            <p>School Shoes</p>
+            <p>School Bags & Backpacks</p>
+        </details>
+        <details>
+            <summary>Kids'</summary>
+            <p>Girls' Black Shoes</p>
+            <p>Kids' Black Shoes</p>
+            <p>Kids' School Clothing</p>
+            <p>Boys' School Shoes</p>
+            <p>Girls' School Shoes</p>
+            <p>Kids' School Shoes</p>
+        </details>
+        <details>
+            <summary>Featured</summary>
+            <p>Football Club Teams</p>
+            <p>Football</p>
+            <p>Nike England</p>
+            <p>Nike Run Club</p>
+            <p>Nike Training Club</p>
+            <p>Gift Ideas</p>
+        </details>
 	</main>
 
-	<footer>
-		<details open>
-			<summary>Resources</summary>
-			<p>Gift Cards</p>
-			<p>Corporate Gift Cards</p>
-			<p>Find a Store</p>
-			<p>Nike Journal</p>
-			<p>Become a Member</p>
-			<p>Student Discount</p>
-			<p>Feedback</p>
-			<p>Promo Codes</p>
-		</details>
-		<details>
-			<summary>Help</summary>
-			<p>Get Help</p>
-			<p>Order Status</p>
-			<p>Shipping and Delivery</p>
-			<p>Returns</p>
-			<p>Payment Options</p>
-			<p>Contact Us</p>
-			<p>Reviews</p>
-			<p>Nike Promo Codes Help</p>
-		</details>
-		<details>
-			<summary>Company</summary>
-			<p>About Nike</p>
-			<p>News</p>
-			<p>Careers</p>
-			<p>Investors</p>
-			<p>Sustainability</p>
-			<p>Accessibility</p>
-			<p>Purpose</p>
-			<p>Report a Concern</p>
-		</details>
+    <footer>
+        <form>
+            <div>
+                <label for="name">Naam*</label>
+                <input type="text" id="name" name="name" placeholder="Jan" required/>
+            </div>
 
-		<img
-			src="./images/icons/globe.svg"
-			alt=""
-		/>
-		<p>Netherlands</p>
+            <div>
+                <label for="mail">E-mail*</label>
+                <input type="email" id="mail" name="mail" placeholder="jan@gmail.com" required/>
+            </div>
 
-		<p>© 2025 Nike, Inc. All rights reserved</p>
-		<p>Guides</p>
-		<p>Terms of Use</p>
-		<p>Terms of Sale</p>
-		<p>Company Details</p>
-		<p>Privacy & Cookie Policy</p>
-		<p>Privacy & Cookie Setting</p>
-	</footer>
+            <div>
+                <label for="telefoon">Telefoon nummer</label>
+                <input type="tel" id="telefoon" name="telefoon" placeholder="(31+)6 12345678"/>
+            </div>
+
+            <div>
+                <label for="password">Wachtwoord*<span> (At least 5 characters)</span></label>
+                <input type="password" id="password" name="password" placeholder="*****" minlength="5" required/>
+            </div>
+
+            <div>
+                <label for="textarea">Opmerkingen</label>
+                <textarea id="textarea" name="textarea" placeholder="Typ hier uw opmerking.." rows="6"></textarea>
+
+                <input type="submit">
+            </div>
+
+            <!-- Bro Code. (2021, 1 september). Learn HTML forms in 8 minutes 📝 [Video]. YouTube. https://www.youtube.com/watch?v=2O8pkybH6po-->
+        </form>
+
+
+
+        <details open name="footer-details">
+            <summary>Resources</summary>
+            <ul>
+                <li><a href="product.html">Gift Cards</a></li>
+                <li><a href="product.html">Corporate Gift Cards</a></li>
+                <li><a href="product.html">Find a Store</a></li>
+                <li><a href="product.html">Nike Journal</a></li>
+                <li><a href="product.html">Become a Member</a></li>
+                <li><a href="product.html">Student Discount</a></li>
+                <li><a href="product.html">Feedback</a></li>
+                <li><a href="product.html">Promo Codes</a></li>
+            </ul>
+        </details>
+
+        <details name="footer-details">
+            <summary>Help</summary>
+            <ul>
+                <li><a href="product.html">Get Help</a></li>
+                <li><a href="product.html">Order Status</a></li>
+                <li><a href="product.html">Shipping and Delivery</a></li>
+                <li><a href="product.html">Returns</a></li>
+                <li><a href="product.html">Payment Options</a></li>
+                <li><a href="product.html">Contact Us</a></li>
+                <li><a href="product.html">Reviews</a></li>
+                <li><a href="product.html">Nike Promo Codes Help</a></li>
+            </ul>
+        </details>
+
+        <details name="footer-details">
+            <summary>Company</summary>
+            <ul>
+                <li><a href="product.html">About Nike</a></li>
+                <li><a href="product.html">News</a></li>
+                <li><a href="product.html">Careers</a></li>
+                <li><a href="product.html">Investors</a></li>
+                <li><a href="product.html">Sustainability</a></li>
+                <li><a href="product.html">Accessibility</a></li>
+                <li><a href="product.html">Purpose</a></li>
+                <li><a href="product.html">Report a Concern</a></li>
+            </ul>
+        </details>
+
+        <!--Graham, G. (2025b, mei 27). Using & Styling the Details Element | CSS-Tricks. CSS-Tricks. https://css-tricks.com/using-styling-the-details-element/-->
+
+        <div>
+            <img
+                src="./images/icons/globe.svg"
+                alt=""
+                width="16"
+            />
+            <p>Netherlands</p>
+        </div>
+
+        <p>© 2025 Nike, Inc. All rights reserved</p>
+
+        <ul>
+            <li><a href="product.html">Guides</a></li>
+            <li><a href="product.html">Terms of Use</a></li>
+            <li><a href="product.html">Terms of Sale</a></li>
+            <li><a href="product.html">Company Details</a></li>
+            <li><a href="product.html">Privacy & Cookie Policy</a></li>
+            <li><a href="product.html">Privacy & Cookie Setting</a></li>
+        </ul>
+    </footer>
 
 
 	<script defer src="scripts/script.js"></script>
